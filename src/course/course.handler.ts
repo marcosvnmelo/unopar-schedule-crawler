@@ -1,5 +1,5 @@
-import { Source } from 'crawlee';
-import { Locator } from 'playwright';
+import type { Source } from 'crawlee';
+import type { Locator } from 'playwright';
 
 import {
     courseBoxLocator,
@@ -9,13 +9,13 @@ import {
     courseTitleLocator,
 } from '~/course/course.locators';
 import {
-    type CrawlerHandlerPage,
-    type CrawlerHandler,
     config,
+    type CrawlerHandler,
+    type CrawlerHandlerPage,
 } from '~/crawler';
 import { disciplineHandler } from '~/discipline/discipline.handler';
 import { disciplineNameLocator } from '~/discipline/discipline.locators';
-import { prisma } from '~/services/prisma';
+import { prisma } from '~/libs/prisma';
 import { removeSpaceAroundText } from '~/utils';
 
 const courseHandler: CrawlerHandler = async ({

@@ -6,7 +6,6 @@ import { router as requestHandler } from './routes';
 import { logRequestLabel, setPageCustomTimeout } from '~/utils';
 
 export const crawler = new PlaywrightCrawler({
-    headless: true,
     requestHandler,
     postNavigationHooks: [logRequestLabel],
     useSessionPool: false,

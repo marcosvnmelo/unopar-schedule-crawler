@@ -1,6 +1,6 @@
-import { crawler, config } from '~/crawler';
-import { prisma } from '~/services/prisma';
-import { saveToXlsx } from '~/services/xlsx';
+import { config, crawler } from '~/crawler';
+import { prisma } from '~/libs/prisma';
+import { saveToXlsx } from '~/libs/xlsx';
 
 await prisma.course.deleteMany();
 

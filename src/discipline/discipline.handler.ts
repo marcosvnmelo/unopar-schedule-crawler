@@ -6,7 +6,7 @@ import {
     disciplinePanelTimeLocator,
     disciplinePanelTitleLocator,
 } from '~/discipline/discipline.locators';
-import { prisma } from '~/services/prisma';
+import { prisma } from '~/libs/prisma';
 import { removeSpaceAroundText } from '~/utils';
 
 const disciplineHandler: CrawlerHandler = async ({ page, request, log }) => {

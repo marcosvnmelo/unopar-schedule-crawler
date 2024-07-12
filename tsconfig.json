@@ -5,6 +5,9 @@
         "target": "ES2022",
         "outDir": "dist",
         "noUnusedLocals": false,
+        "verbatimModuleSyntax": true,
+        "skipLibCheck": true,
+        "skipDefaultLibCheck": true,
         "lib": ["DOM"],
         "strict": true,
         "baseUrl": ".",
@@ -13,6 +16,7 @@
         }
     },
     "include": ["./src/**/*"],
+    "exclude": ["./node_modules/"],
     "tsc-alias": {
         "resolveFullPaths": true
     }
